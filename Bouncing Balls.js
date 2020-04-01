@@ -31,8 +31,7 @@ function bouncingBall(h, bounce, window) {
   if (h <= 0 || bounce >= 1 || bounce <= 0 || window >= h) return -1
   else {
     let counter = 1
-    let ball = h
-    while ((ball *= bounce) > window) {
+    while ((h *= bounce) > window) {
       counter += 2
     }
     return counter
