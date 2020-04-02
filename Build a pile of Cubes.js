@@ -14,11 +14,10 @@ call find_nb            ; rax <-- -1
 */
 
 function findNb(m) {
-  let counter = 1
+  let counter = 0
   while (m > 0) {
+    counter++
     m -= Math.pow(counter, 3)
-    if (m > 0) counter++
-    else break
   }
   return m === 0 ? counter : -1
 }
