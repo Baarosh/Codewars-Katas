@@ -15,6 +15,7 @@ function toCamelCase(str) {
     .map((word, index) =>
       index !== 0 ? word[0].toUpperCase() + word.slice(1) : word
     )
+    .join('')
 }
 
 console.log(toCamelCase('the-stealth-warrior'))
