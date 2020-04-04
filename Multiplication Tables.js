@@ -12,13 +12,14 @@ multiplication_table(3,3)
 
 Each value on the table should be equal to the value of multiplying the number in its first row times the number in its first column. */
 function multiplicationTable(row, col) {
-  let arr = new Array(row).fill(0)
-  arr = arr.map((c) => new Array(col).fill(0))
+  let arr = new Array(row).fill('').map(() => new Array(col).fill(''))
+
   arr.forEach((c, ind) => {
     for (let i = 0; i < c.length; i++) {
       c[i] = (ind + 1) * (i + 1)
     }
   })
+
   return arr
 }
 
