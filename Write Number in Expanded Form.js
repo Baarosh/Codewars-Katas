@@ -12,7 +12,6 @@ function expandedForm(num) {
   for (let i = num.length - 1, j = 0; i >= 0; i--, j++) {
     num[i] != 0 ? tab.unshift(num[i] * 10 ** j) : false
   }
-  console.log(num)
   return tab.join(' + ')
 }
 
