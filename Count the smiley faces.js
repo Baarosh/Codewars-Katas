@@ -36,21 +36,24 @@ function countSmileys(arr) {
   //   })
   //   return counter
 
-  return arr.filter(
-    (el) =>
-      el === ':)' ||
-      el === ':D' ||
-      el === ':-D' ||
-      el === ':~D' ||
-      el === ':-)' ||
-      el === ':~)' ||
-      el === ';)' ||
-      el === ';D' ||
-      el === ';-D' ||
-      el === ';~D' ||
-      el === ';-)' ||
-      el === ';~)'
-  ).length
+  //   return arr.filter(
+  //       const reg = new RegExp('^[:;][-~]?[D)]$')
+  //     (el) =>
+  //       el === ':)' ||
+  //       el === ':D' ||
+  //       el === ':-D' ||
+  //       el === ':~D' ||
+  //       el === ':-)' ||
+  //       el === ':~)' ||
+  //       el === ';)' ||
+  //       el === ';D' ||
+  //       el === ';-D' ||
+  //       el === ';~D' ||
+  //       el === ';-)' ||
+  //       el === ';~)'
+  //   ).length
+
+  return arr.filter((el) => /^[:;][-~]?[D)]$/.test(el)).length
 }
 
 console.log(countSmileys([':)', ';(', ';}', ':-D']))
