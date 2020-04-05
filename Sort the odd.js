@@ -9,8 +9,10 @@ sortArray([5, 3, 2, 8, 1, 4]) == [1, 3, 2, 8, 5, 4] */
 
 function sortArray(array) {
   if (array.length === 0) return []
+
   const indexes = []
   let nums = []
+
   array.forEach((el, i) => {
     if (el % 2 == 1) {
       indexes.push(i)
