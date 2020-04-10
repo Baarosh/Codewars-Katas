@@ -15,7 +15,7 @@ More examples in test cases. Good luck! */
 
 function solve(s) {
   s = s
-    .split('/[aioeu]+/')
+    .split(new RegExp('[aioeu]'))
     .filter((l) => l)
     .map((l) => {
       l = l.split('')
