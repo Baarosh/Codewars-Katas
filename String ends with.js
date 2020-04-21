@@ -6,7 +6,7 @@
 // solution('abc', 'd') // returns false
 
 function solution(str, ending) {
-  return str.indexOf(ending) == str.length - ending.length
+  return str.slice(str.length - ending.length) == ending
 }
 
 console.log(solution('abc', 'bc'), true)
