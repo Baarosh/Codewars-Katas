@@ -10,7 +10,7 @@ For example the array [2, 3, 9] equals 239, adding one would return the array [2
 [4, 3, 2, 5] would return [4, 3, 2, 6] */
 
 function upArray(arr) {
-  if (arr.length === 0 || !arr.every(num => num >= 0 && num < 10)) return null
+  if (arr.length === 0 || !arr.every((num) => num >= 0 && num < 10)) return null
   else
     for (let i = arr.length - 1; i > 0; i--) {
       if (arr[i] < 9) {
@@ -21,7 +21,7 @@ function upArray(arr) {
         arr[i - 1]++
         break
       } else if (i === 1) {
-        arr = arr.map(digit => 0)
+        arr = arr.map((digit) => 0)
         arr.unshift(1)
         break
       }

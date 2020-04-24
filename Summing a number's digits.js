@@ -9,7 +9,7 @@ function sumDigits(number) {
   return number
     .toString()
     .match(/[0-9]/g)
-    .reduce((s, c) => Number(s) + Number(c))
+    .reduce((s, c) => Number(s) + Number(c), 0)
 }
 
 console.log(sumDigits(10), 1)
