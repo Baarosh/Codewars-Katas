@@ -20,6 +20,6 @@ function f(n) {
 console.log(f(100), 5050)
 console.log(f(300), 45150)
 console.log(f(50000), 1250025000)
-console.log(f('n'), false, 'n must be a number')
+console.log(f('n'), false, 'n must be a number')cccc
 console.log(f(), false, 'n must be a value')
 console.log(f(3.14), false, 'n must be an integer')
