@@ -1,0 +1,2 @@
+msg = "alal"
+print(msg)
